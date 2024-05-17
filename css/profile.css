@@ -1,0 +1,123 @@
+.container-profil .saved  {
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 40px;
+  }
+  
+  @media(max-width: 792px) {
+    .container-profil {
+        flex-direction: column;
+        justify-content:center;
+        width:100%;
+    }
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align:left;
+    margin-right: 30px;   
+    width:30%;
+    gap: 30px;
+    border-right: 1px solid #d9d9d9;
+  }
+  
+  @media(max-width: 792px) {
+    .profile {
+        border-right: none;
+        border-bottom: 1px solid #d9d9d9;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+  }
+  .min-profil, a{
+    padding-left:12px;
+  }
+  
+  .controllers {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+    gap: 10px;
+  }
+  
+  @media(max-width:792px) {
+    .profile .controllers {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+  }
+  
+  
+  .controllers .btn-trans {
+    display: flex;
+    align-items: center; 
+    background-color: transparent;
+    padding: 8px 12px ;
+    border: none;
+    border-radius: 8px;
+    color: black;
+  }
+  
+    .controllers .btn-trans img {
+        margin-right: 8px; 
+    }
+  
+    .controllers .btn-trans:hover {
+        background-color: #6366F1;
+    }
+  
+        .controllers .btn-trans:hover img {
+            filter: brightness(0) invert(1);
+        }
+  
+  .controllers .btn-trans:hover {
+        color: #ffffff;
+  }
+  
+  
+  @media only screen and (max-width: 972px) {
+    .controllers .btn-trans {
+        display: inline-flex; 
+        align-items: center;
+        background-color: transparent;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        transition: background-color 0.3s ease;
+    }
+  
+        .controllers .btn-trans img {
+            width: 30px; 
+            height: auto;
+            transition: filter 0.3s ease;
+        }
+  
+        .controllers .btn-trans .btn-text {
+            display: none;
+            margin-left: 8px; 
+            transition: opacity 0.3s ease;
+        }
+  
+        .controllers .btn-trans:hover {
+            background-color: #6366F1;
+        }
+  
+            .controllers .btn-trans:hover img {
+                filter: brightness(0) invert(1);
+            }
+  
+            .controllers .btn-trans:hover .btn-text {
+                display: inline-block; 
+                opacity: 1;
+            }
+  }
+  
+ 

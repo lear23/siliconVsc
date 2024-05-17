@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/security.css">
+    <title>Silicon</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+        <div class="container">
+            <a id="logo" href="accountDetails.html"><img src="images/logo_silicon.svg" alt=""></a>
+
+            <div id="menu">
+                <nav>
+                    <a href="#showcase" class="menu-link">Overview</a>
+                    <a href="#features" class="menu-link">Features</a>
+                    <a href="contact.html" class="menu-link">Contact</a>
+                </nav>
+            </div>
+
+            <div class="btn-switch">
+                <label>Light</label>
+                <label for="switch-mode" class="switch">
+                    <input type="checkbox" id="switch-mode" />
+                    <div class="slider round"></div>
+                    </label>
+                <label>Dark</label>
+            </div>
+             <img src="images/avatarimage.svg" alt="">
+        </div>
+
+    </header>
+    <main>
+
+     <section class="details">
+        <div class="container container-profil">
+            <div class="profile">
+                <a href="accountDetails.html"><img src="images/userAvatar.svg" alt=""></a>
+                <div class="controllers">
+                    <a href="accountDetails.html" class="btn-trans"><img src="images/bx-cog.svg" alt="">Account
+                        Details</a>
+                    <a href="security.html" class="btn-trans"><img src="images/bx-lock-alt.svg"
+                            alt="">Security</a>
+                    <a href="notifications.html" class="btn-trans"><img src="images/bx-bell.svg"
+                            alt="">Notifications</a>
+                    <a href="messages.html" class="btn-trans"><img src="images/bx-chat.svg"
+                            alt="">Messages</a>
+                    <a href="savedItems.html" class="btn-trans"><img src="images/savedcourse.svg"
+                            alt="">Saved Courses</a>
+                    <a href="signout.html" class="btn-trans"><img src="images/bx-log-out.svg" alt="">Sign
+                        Out</a>
+                </div>
+
+            </div>      
+            <div class="infoDetails">          
+            
+                <div class="createNewSecurity">
+                    <h1>Security</h1>
+                    <h5 class="colorTitle">Basic Info</h5>
+                    <div class="klientInfo">
+                        <div class="oldPassword">
+                            <label><b>Current password</b></label>
+                            <input  type="text" placeholder="*******">
+                        </div>                      
+
+                    </div>      
+                        <div class="clientInfo">
+                            <div class="clienSecurity">
+                                <label><b>New password</b></label>
+                                <input type="password" placeholder="*******">
+                            </div>
+                            <div class="clienSecurity">
+                                <label><b>Confirm new password</b></label>
+                                <input type="password" placeholder="*******">
+                            </div>
+                        </div>
+                        
+                        <div class="acountbutton">
+                            <button class="btn-gray">Cancel</button>
+                            <button class="btn-theme">Save Changes</button>
+                        </div>                                          
+                </div>   
+                <hr>
+                <div class="address">
+                    <h5 class="colorTitle">Delete account</h5>
+                    <p class="text-m">When you delete your account, your public profile will be deactivated immediately. If you change your mind before the 14 days are up, sign in with your email and password, and we’ll send you a link to reactivate your account.</p>
+                    <div class="securityCheck">
+                        <input type="checkbox">
+                        <label for="checkbox">I agree to the <a href="#">Terms</a> & <a href="#">Conditions</a></label>
+                    </div>   
+                    </div>
+                   
+                <div class="acountbutton">
+                    <button class="btn-red">Delete</button>                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <a href="https://www.facebook.com/?locale=sv_SE" target="_blank" class="btn-social"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/?lang=sv" target="_blank" class="btn-social"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="btn-social"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" class="btn-social"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2024 Silicon. All rights reserved. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium reiciendis illum perspiciatis ab nisi dicta consectetur deleniti corrupti atque. Excepturi ad consequatur rerum ipsum sequi ab enim illum nesciunt dolores.</p>
+        </div>
+    </footer>
+  </div>
+    
+    <script src="Js/menuMobil.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
