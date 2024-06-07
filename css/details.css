@@ -89,8 +89,7 @@ header {
     gap: 30px;
     border-right: 1px solid #d9d9d9;
 }
-
-@media(max-width: 792px) {
+@media(max-width: 992px) {
     .profile {
         border-right: none;
         border-bottom: 1px solid #d9d9d9;
@@ -100,9 +99,62 @@ header {
         margin-right: 0;
     }
 }
-.min-profil, a{
-    padding-left:12px;
+
+.min-profil {
+    position:relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+   
 }
+
+.avatar-container {
+    width: 100px; 
+    height: 100px; 
+    overflow: hidden; 
+    border-radius: 50%;
+}
+    .min-profil .avatar-container img {
+        width: 100%; 
+        height: auto;
+        display: block;
+    }
+
+
+    .min-profil form {
+        position: absolute;
+        top: 70px;
+        right: 60px;
+        margin-left: 5px;
+        border-radius:50px;
+        background-color: #EFF9FC;
+    }
+@media (max-width: 792px) {
+    .min-profil form {
+        position: relative;
+        top: -40px;
+        right: -30px;
+        margin-left: auto;
+        margin-top: 10px;
+        border-radius: 50px;
+        width: 45px;
+        height: auto;
+    }
+}
+@media (max-width: 572px) {
+    .min-profil form {
+        position: relative;
+        top: -50px;
+        right: -40px;
+        margin-left: auto;
+        margin-top: 10px;
+        border-radius: 50px;
+       /* background-color: transparent;*/
+        width: 45px;
+        height: auto;
+    }
+}
+
 
 .controllers {
     display: flex;
@@ -111,7 +163,7 @@ header {
     gap: 10px;
 }
 
-@media(max-width:792px) {
+@media(max-width:992px) {
     .profile .controllers {
         display: flex;
         flex-direction:row;
@@ -127,7 +179,6 @@ header {
     align-items: center; 
     background-color: transparent;
     padding: 8px 12px ;
-    border: none;
     border-radius: 8px;
     color: black;
 }
@@ -149,7 +200,7 @@ header {
 }
 
 
-@media only screen and (max-width: 972px) {
+@media only screen and (max-width: 992px) {
     .controllers .btn-trans {
         display: inline-flex; 
         align-items: center;
@@ -162,6 +213,11 @@ header {
 
         .controllers .btn-trans img {
             width: 30px; 
+            height: auto;
+            transition: filter 0.3s ease;
+        }
+        .controllers .btn-trans .bookmark {
+            width: 20px;
             height: auto;
             transition: filter 0.3s ease;
         }
@@ -185,6 +241,7 @@ header {
                 opacity: 1;
             }
 }
+/*-------------------------------------------*/
 
 
 /* .vertical-line {
